@@ -5,6 +5,8 @@ use App\Http\Controllers\BibliotecasController;
 use App\Http\Controllers\BibliotecaPessoaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PessoaController;
+use App\Http\Controllers\LivroController;
+use App\Http\Controllers\AutorController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,11 +18,12 @@ Route::post("/bibliotecas/create", [BibliotecasController::class, 'store'])->nam
 Route::get("/bibliotecas/edit/{id}", [BibliotecasController::class, 'edit'])->name("bibliotecas.edit");
 Route::put("/bibliotecas/update/{id}", [BibliotecasController::class, 'update'])->name("bibliotecas.update");
 Route::delete("/bibliotecas/delete/{id}", [BibliotecasController::class, 'destroy'])->name("bibliotecas.destroy");
-Route::get('/bibliotecas/{biblioteca}/pessoas/add', [BibliotecaPessoaController::class, 'create'])
-    ->name('bibliotecas.pessoas.create');
-Route::post('/bibliotecas/{biblioteca}/pessoas', [BibliotecaPessoaController::class, 'store'])
-    ->name('bibliotecas.pessoas.store');
+Route::get('/bibliotecas/{biblioteca}/pessoas/add', [BibliotecaPessoaController::class, 'create'])->name('bibliotecas.pessoas.create');
+Route::post('/bibliotecas/{biblioteca}/pessoas', [BibliotecaPessoaController::class, 'store'])->name('bibliotecas.pessoas.store');
 
 Route::resource('users', UserController::class);
 
 Route::resource('pessoas', PessoaController::class);
+
+Route::resource('livros', LivroController::class);
+Route::resource('autores', AutorController::class);
