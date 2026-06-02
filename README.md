@@ -38,6 +38,10 @@ docker compose exec app php artisan db:seed PessoaBibliotecaSeeder
 ```
 
 
+### Cobertura de teste com xdebug
+```
+XDEBUG_MODE=coverage /usr/bin/php8.4 artisan test --coverage
+```
 
 
 

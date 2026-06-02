@@ -14,7 +14,7 @@ RUN dpkg-reconfigure --frontend noninteractive tzdata
 RUN apt-get update && apt-get install --no-install-recommends -y php8.4 php8.4-mysql php8.4-mongodb php8.4-gd php8.4-fpm php8.4-mbstring \
     php-json php8.4-curl php8.4-xml php8.4-zip php8.4-soap \
     php8.4-phar php8.4-intl php8.4-xmlreader php8.4-ctype \
-    php8.4-dev php8.4-bcmath
+    php8.4-dev php8.4-bcmath php8.4-xdebug
 
 
 RUN php8.4 -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
