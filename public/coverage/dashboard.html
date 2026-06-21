@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /app/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=12.5.6" rel="stylesheet" type="text/css">
+  <link href="_css/billboard.min.css?v=12.5.6" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=12.5.6" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/app/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classesCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#8">App\Http\Controllers\AutorController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecaPessoaController.php.html#9">App\Http\Controllers\BibliotecaPessoaController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#8">App\Http\Controllers\BibliotecasController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#9">App\Http\Controllers\LivroController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#8">App\Http\Controllers\PessoaController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#8">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Autor.php.html#7">App\Models\Autor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Biblioteca.php.html#8">App\Models\Biblioteca</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Livro.php.html#7">App\Models\Livro</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Pessoa.php.html#9">App\Models\Pessoa</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#13">App\Models\User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#7">App\Providers\AppServiceProvider</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#8">App\Http\Controllers\BibliotecasController</a></td><td class="text-right">0.0%</td><td class="text-right">20</td><td class="text-right">420</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#8">App\Http\Controllers\UserController</a></td><td class="text-right">0.0%</td><td class="text-right">14</td><td class="text-right">210</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#8">App\Http\Controllers\PessoaController</a></td><td class="text-right">0.0%</td><td class="text-right">13</td><td class="text-right">182</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecaPessoaController.php.html#9">App\Http\Controllers\BibliotecaPessoaController</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2 style="margin-top: 3rem;">Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodsCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#11"><abbr title="App\Http\Controllers\AutorController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#17"><abbr title="App\Http\Controllers\AutorController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#22"><abbr title="App\Http\Controllers\AutorController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#35"><abbr title="App\Http\Controllers\AutorController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AutorController.php.html#41"><abbr title="App\Http\Controllers\AutorController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecaPessoaController.php.html#11"><abbr title="App\Http\Controllers\BibliotecaPessoaController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecaPessoaController.php.html#20"><abbr title="App\Http\Controllers\BibliotecaPessoaController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#11"><abbr title="App\Http\Controllers\BibliotecasController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#22"><abbr title="App\Http\Controllers\BibliotecasController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#32"><abbr title="App\Http\Controllers\BibliotecasController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#56"><abbr title="App\Http\Controllers\BibliotecasController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#73"><abbr title="App\Http\Controllers\BibliotecasController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#112"><abbr title="App\Http\Controllers\BibliotecasController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#13"><abbr title="App\Http\Controllers\LivroController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#19"><abbr title="App\Http\Controllers\LivroController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#25"><abbr title="App\Http\Controllers\LivroController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#31"><abbr title="App\Http\Controllers\LivroController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#43"><abbr title="App\Http\Controllers\LivroController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#50"><abbr title="App\Http\Controllers\LivroController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LivroController.php.html#61"><abbr title="App\Http\Controllers\LivroController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#12"><abbr title="App\Http\Controllers\PessoaController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#18"><abbr title="App\Http\Controllers\PessoaController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#23"><abbr title="App\Http\Controllers\PessoaController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#41"><abbr title="App\Http\Controllers\PessoaController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#49"><abbr title="App\Http\Controllers\PessoaController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#80"><abbr title="App\Http\Controllers\PessoaController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#11"><abbr title="App\Http\Controllers\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#17"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#26"><abbr title="App\Http\Controllers\UserController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#31"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#50"><abbr title="App\Http\Controllers\UserController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#59"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#82"><abbr title="App\Http\Controllers\UserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Autor.php.html#18"><abbr title="App\Models\Autor::livros">livros</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Biblioteca.php.html#17"><abbr title="App\Models\Biblioteca::creator">creator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Biblioteca.php.html#25"><abbr title="App\Models\Biblioteca::users">users</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Biblioteca.php.html#33"><abbr title="App\Models\Biblioteca::pessoas">pessoas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Livro.php.html#20"><abbr title="App\Models\Livro::emprestimos">emprestimos</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Livro.php.html#25"><abbr title="App\Models\Livro::autor">autor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Pessoa.php.html#20"><abbr title="App\Models\Pessoa::bibliotecas">bibliotecas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Pessoa.php.html#28"><abbr title="App\Models\Pessoa::casts">casts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#23"><abbr title="App\Models\User::bibliotecas">bibliotecas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#31"><abbr title="App\Models\User::roleInBiblioteca">roleInBiblioteca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#41"><abbr title="App\Models\User::hasBibliotecaRole">hasBibliotecaRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#49"><abbr title="App\Models\User::isOwnerOfBiblioteca">isOwnerOfBiblioteca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#57"><abbr title="App\Models\User::isAdminOfBiblioteca">isAdminOfBiblioteca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#65"><abbr title="App\Models\User::isEditorOfBiblioteca">isEditorOfBiblioteca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#73"><abbr title="App\Models\User::isViewerOfBiblioteca">isViewerOfBiblioteca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#83"><abbr title="App\Models\User::casts">casts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#12"><abbr title="App\Providers\AppServiceProvider::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#20"><abbr title="App\Providers\AppServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#73"><abbr title="App\Http\Controllers\BibliotecasController::update">update</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">11</td><td class="text-right">132</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#49"><abbr title="App\Http\Controllers\PessoaController::update">update</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#112"><abbr title="App\Http\Controllers\BibliotecasController::destroy">destroy</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#59"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#82"><abbr title="App\Http\Controllers\UserController::destroy">destroy</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecaPessoaController.php.html#20"><abbr title="App\Http\Controllers\BibliotecaPessoaController::store">store</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#32"><abbr title="App\Http\Controllers\BibliotecasController::store">store</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/BibliotecasController.php.html#56"><abbr title="App\Http\Controllers\BibliotecasController::edit">edit</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#23"><abbr title="App\Http\Controllers\PessoaController::store">store</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/PessoaController.php.html#41"><abbr title="App\Http\Controllers\PessoaController::edit">edit</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#17"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#31"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#50"><abbr title="App\Http\Controllers\UserController::edit">edit</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 12.5.6</a> using <a href="https://www.php.net/" target="_top">PHP 8.4.22</a> and <a href="https://phpunit.de/">PHPUnit 12.5.24</a> at Sun Jun 21 20:22:17 UTC 2026.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/billboard.pkgd.min.js?v=12.5.6" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[0,5,"Http\/Controllers\/AutorController.php.html#8","App\\Http\\Controllers\\AutorController","30"],[0,3,"Http\/Controllers\/BibliotecaPessoaController.php.html#9","App\\Http\\Controllers\\BibliotecaPessoaController","12"],[0,20,"Http\/Controllers\/BibliotecasController.php.html#8","App\\Http\\Controllers\\BibliotecasController","420"],[0,7,"Http\/Controllers\/LivroController.php.html#9","App\\Http\\Controllers\\LivroController","56"],[0,13,"Http\/Controllers\/PessoaController.php.html#8","App\\Http\\Controllers\\PessoaController","182"],[0,14,"Http\/Controllers\/UserController.php.html#8","App\\Http\\Controllers\\UserController","210"],[0,1,"Models\/Autor.php.html#7","App\\Models\\Autor","2"],[0,3,"Models\/Biblioteca.php.html#8","App\\Models\\Biblioteca","12"],[0,2,"Models\/Livro.php.html#7","App\\Models\\Livro","6"],[0,2,"Models\/Pessoa.php.html#9","App\\Models\\Pessoa","6"],[0,8,"Models\/User.php.html#13","App\\Models\\User","72"],[0,2,"Providers\/AppServiceProvider.php.html#7","App\\Providers\\AppServiceProvider","6"],[100,0,"Http\/Controllers\/Controller.php.html#5","App\\Http\\Controllers\\Controller","0"]]</script>
+  <script type="application/json" id="complexity_method">[[0,1,"Http\/Controllers\/AutorController.php.html#11","App\\Http\\Controllers\\AutorController::index","2"],[0,1,"Http\/Controllers\/AutorController.php.html#17","App\\Http\\Controllers\\AutorController::create","2"],[0,1,"Http\/Controllers\/AutorController.php.html#22","App\\Http\\Controllers\\AutorController::store","2"],[0,1,"Http\/Controllers\/AutorController.php.html#35","App\\Http\\Controllers\\AutorController::edit","2"],[0,1,"Http\/Controllers\/AutorController.php.html#41","App\\Http\\Controllers\\AutorController::update","2"],[0,1,"Http\/Controllers\/BibliotecaPessoaController.php.html#11","App\\Http\\Controllers\\BibliotecaPessoaController::create","2"],[0,2,"Http\/Controllers\/BibliotecaPessoaController.php.html#20","App\\Http\\Controllers\\BibliotecaPessoaController::store","6"],[0,1,"Http\/Controllers\/BibliotecasController.php.html#11","App\\Http\\Controllers\\BibliotecasController::index","2"],[0,1,"Http\/Controllers\/BibliotecasController.php.html#22","App\\Http\\Controllers\\BibliotecasController::create","2"],[0,2,"Http\/Controllers\/BibliotecasController.php.html#32","App\\Http\\Controllers\\BibliotecasController::store","6"],[0,2,"Http\/Controllers\/BibliotecasController.php.html#56","App\\Http\\Controllers\\BibliotecasController::edit","6"],[0,11,"Http\/Controllers\/BibliotecasController.php.html#73","App\\Http\\Controllers\\BibliotecasController::update","132"],[0,3,"Http\/Controllers\/BibliotecasController.php.html#112","App\\Http\\Controllers\\BibliotecasController::destroy","12"],[0,1,"Http\/Controllers\/LivroController.php.html#13","App\\Http\\Controllers\\LivroController::index","2"],[0,1,"Http\/Controllers\/LivroController.php.html#19","App\\Http\\Controllers\\LivroController::show","2"],[0,1,"Http\/Controllers\/LivroController.php.html#25","App\\Http\\Controllers\\LivroController::create","2"],[0,1,"Http\/Controllers\/LivroController.php.html#31","App\\Http\\Controllers\\LivroController::store","2"],[0,1,"Http\/Controllers\/LivroController.php.html#43","App\\Http\\Controllers\\LivroController::edit","2"],[0,1,"Http\/Controllers\/LivroController.php.html#50","App\\Http\\Controllers\\LivroController::update","2"],[0,1,"Http\/Controllers\/LivroController.php.html#61","App\\Http\\Controllers\\LivroController::destroy","2"],[0,1,"Http\/Controllers\/PessoaController.php.html#12","App\\Http\\Controllers\\PessoaController::index","2"],[0,1,"Http\/Controllers\/PessoaController.php.html#18","App\\Http\\Controllers\\PessoaController::create","2"],[0,2,"Http\/Controllers\/PessoaController.php.html#23","App\\Http\\Controllers\\PessoaController::store","6"],[0,2,"Http\/Controllers\/PessoaController.php.html#41","App\\Http\\Controllers\\PessoaController::edit","6"],[0,6,"Http\/Controllers\/PessoaController.php.html#49","App\\Http\\Controllers\\PessoaController::update","42"],[0,1,"Http\/Controllers\/PessoaController.php.html#80","App\\Http\\Controllers\\PessoaController::destroy","2"],[0,1,"Http\/Controllers\/UserController.php.html#11","App\\Http\\Controllers\\UserController::index","2"],[0,2,"Http\/Controllers\/UserController.php.html#17","App\\Http\\Controllers\\UserController::show","6"],[0,1,"Http\/Controllers\/UserController.php.html#26","App\\Http\\Controllers\\UserController::create","2"],[0,2,"Http\/Controllers\/UserController.php.html#31","App\\Http\\Controllers\\UserController::store","6"],[0,2,"Http\/Controllers\/UserController.php.html#50","App\\Http\\Controllers\\UserController::edit","6"],[0,3,"Http\/Controllers\/UserController.php.html#59","App\\Http\\Controllers\\UserController::update","12"],[0,3,"Http\/Controllers\/UserController.php.html#82","App\\Http\\Controllers\\UserController::destroy","12"],[0,1,"Models\/Autor.php.html#18","App\\Models\\Autor::livros","2"],[0,1,"Models\/Biblioteca.php.html#17","App\\Models\\Biblioteca::creator","2"],[0,1,"Models\/Biblioteca.php.html#25","App\\Models\\Biblioteca::users","2"],[0,1,"Models\/Biblioteca.php.html#33","App\\Models\\Biblioteca::pessoas","2"],[0,1,"Models\/Livro.php.html#20","App\\Models\\Livro::emprestimos","2"],[0,1,"Models\/Livro.php.html#25","App\\Models\\Livro::autor","2"],[0,1,"Models\/Pessoa.php.html#20","App\\Models\\Pessoa::bibliotecas","2"],[0,1,"Models\/Pessoa.php.html#28","App\\Models\\Pessoa::casts","2"],[0,1,"Models\/User.php.html#23","App\\Models\\User::bibliotecas","2"],[0,1,"Models\/User.php.html#31","App\\Models\\User::roleInBiblioteca","2"],[0,1,"Models\/User.php.html#41","App\\Models\\User::hasBibliotecaRole","2"],[0,1,"Models\/User.php.html#49","App\\Models\\User::isOwnerOfBiblioteca","2"],[0,1,"Models\/User.php.html#57","App\\Models\\User::isAdminOfBiblioteca","2"],[0,1,"Models\/User.php.html#65","App\\Models\\User::isEditorOfBiblioteca","2"],[0,1,"Models\/User.php.html#73","App\\Models\\User::isViewerOfBiblioteca","2"],[0,1,"Models\/User.php.html#83","App\\Models\\User::casts","2"],[0,1,"Providers\/AppServiceProvider.php.html#12","App\\Providers\\AppServiceProvider::register","2"],[0,1,"Providers\/AppServiceProvider.php.html#20","App\\Providers\\AppServiceProvider::boot","2"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [12,0,0,0,0,0,0,0,0,0,0,1])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [51,0,0,0,0,0,0,0,0,0,0,0])
+  );
+
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        const crap = complexityData[data[0].index][4];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Crap</td><td class="value">${crap}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
+  </script>
+ </body>
+</html>
