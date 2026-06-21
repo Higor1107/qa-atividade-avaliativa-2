@@ -4,12 +4,13 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 use App\Models\Livro;
 use App\Models\Autor;
 
 class LivroTest extends TestCase
 {
-    use DatabaseTransactions;
+    use DatabaseTransactions, WithoutMiddleware;
 
     public function test_pode_listar_livros()
     {
@@ -18,7 +19,7 @@ class LivroTest extends TestCase
             'nacionalidade' => 'Brasileiro'
         ]);
         for ($i = 0; $i < 3; $i++) {
-            Livro::create([
+            Livro::forceCreate([
                 'autor_id' => $autor->id,
                 'titulo' => 'Livro ' . $i,
                 'isbn' => '123-456-' . $i,
@@ -70,7 +71,7 @@ class LivroTest extends TestCase
             'nome' => 'Autor Teste',
             'nacionalidade' => 'Br'
         ]);
-        $livro = Livro::create([
+        $livro = Livro::forceCreate([
             'autor_id' => $autor->id,
             'titulo' => 'Livro Show',
             'isbn' => '999',
@@ -96,7 +97,7 @@ class LivroTest extends TestCase
             'nome' => 'Autor Edit',
             'nacionalidade' => 'Br'
         ]);
-        $livro = Livro::create([
+        $livro = Livro::forceCreate([
             'autor_id' => $autor->id,
             'titulo' => 'Livro Edit',
             'isbn' => '888',
@@ -116,7 +117,7 @@ class LivroTest extends TestCase
             'nome' => 'Autor Update',
             'nacionalidade' => 'Br'
         ]);
-        $livro = Livro::create([
+        $livro = Livro::forceCreate([
             'autor_id' => $autor->id,
             'titulo' => 'Título Antigo',
             'isbn' => '777',
@@ -146,7 +147,7 @@ class LivroTest extends TestCase
             'nome' => 'Autor Delete',
             'nacionalidade' => 'Br'
         ]);
-        $livro = Livro::create([
+        $livro = Livro::forceCreate([
             'autor_id' => $autor->id,
             'titulo' => 'Livro Delete',
             'isbn' => '666',

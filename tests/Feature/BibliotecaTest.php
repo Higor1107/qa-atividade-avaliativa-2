@@ -4,12 +4,13 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 use App\Models\Biblioteca;
 use App\Models\User;
 
 class BibliotecaTest extends TestCase
 {
-    use DatabaseTransactions;
+    use DatabaseTransactions, WithoutMiddleware;
 
     public function test_pode_listar_bibliotecas()
     {
@@ -65,7 +66,7 @@ class BibliotecaTest extends TestCase
 
         $response = $this->post(route('bibliotecas.store'), $data);
 
-        $response->assertRedirect(route('bibliotecas.new', ['error' => 'Erro ao criar a biblioteca: Verifique as informações enviadas']));
+        $response->assertRedirect(route('bibliotecas.create', ['error' => 'Erro ao criar a biblioteca: Verifique as informações enviadas']));
         
         $this->assertDatabaseCount('bibliotecas', 0);
     }
