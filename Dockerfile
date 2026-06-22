@@ -11,7 +11,7 @@ RUN ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 #php e dependencias
-RUN apt-get update && apt-get install --no-install-recommends -y php8.4 php8.4-mysql php8.4-mongodb php8.4-gd php8.4-fpm php8.4-mbstring \
+RUN apt-get update && apt-get install --no-install-recommends -y php8.4 php8.4-mysql php8.4-mongodb php8.4-gd php8.4-fpm php8.4-mbstring php8.4-sqlite3 unzip \
     php-json php8.4-curl php8.4-xml php8.4-zip php8.4-soap \
     php8.4-phar php8.4-intl php8.4-xmlreader php8.4-ctype \
     php8.4-dev php8.4-bcmath php8.4-xdebug
