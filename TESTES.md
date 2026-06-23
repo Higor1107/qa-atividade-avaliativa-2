@@ -37,3 +37,17 @@ Segundo os requisitos de QA, identificamos os seguintes bugs intencionais nas co
 - **Middleware Global:** O uso da trait `WithoutMiddleware` na classe base `TestCase.php` mascarava falhas de segurança de rotas globalmente. **Correção:** A trait foi removida da classe base e aplicada apenas pontualmente nas classes de teste específicas onde a proteção CSRF quebrava as chamadas da API (`LivroTest`, `AutorTest`, etc).
 - **Limpeza de Repositório:** Relatórios dinâmicos (`public/coverage/`) e scripts de debug (`test-key.php`) não devem ser versionados. **Correção:** Esses arquivos foram removidos da tracking do Git e adicionados ao `.gitignore`.
 - **Rota Inexistente:** Um teste do `BibliotecaTest` chamava erroneamente `route('bibliotecas.new')`. **Correção:** Atualizado para `route('bibliotecas.create')`.
+
+<img width="619" height="615" alt="image" src="https://github.com/user-attachments/assets/2ade1a09-7ea2-4a2e-a7f4-4f9fb168f75c" />
+
+<img width="615" height="605" alt="image" src="https://github.com/user-attachments/assets/a147ad84-719e-4d3f-806b-166e4c3ef22e" />
+
+<img width="634" height="333" alt="image" src="https://github.com/user-attachments/assets/7c69b24d-b8e0-4d08-9fb1-54339d45be3f" />
+
+<img width="1546" height="733" alt="image" src="https://github.com/user-attachments/assets/da2a14ac-7759-425f-9e26-4238daa40901" />
+<img width="981" height="288" alt="image" src="https://github.com/user-attachments/assets/b199347b-c0b7-415c-9ef6-bb3bf6c0db3d" />
+
+<img width="1540" height="770" alt="image" src="https://github.com/user-attachments/assets/83b97f62-fd00-4a68-8f6a-b932617eaa17" />
+
+<img width="532" height="339" alt="image" src="https://github.com/user-attachments/assets/7ee5a278-e44d-4713-90f8-6056b771d039" />
+
