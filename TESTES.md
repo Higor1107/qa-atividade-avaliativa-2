@@ -57,3 +57,7 @@ Este foi o verdadeiro trabalho do Analista de QA. Os testes revelaram falhas gra
   2. Implementamos o comando mandatário de esteira: `php artisan migrate --env=testing --force` antes do `php artisan test`, preparando totalmente o ambiente de nuvem do GitHub e rodando os testes integrados de forma transparente em cada Push.
   
 **Resultado Atual da Esteira: Build SUCCESS (Verde).**
+
+<img width="571" height="739" alt="image" src="https://github.com/user-attachments/assets/063322b9-2259-41e8-a016-c65d020c7e54" />
+
+<img width="567" height="438" alt="image" src="https://github.com/user-attachments/assets/171c1eed-42cd-44ac-991c-c1d7dfc0a5b8" />
