@@ -9,7 +9,7 @@ use App\Models\Autor;
 
 class AutorTest extends TestCase
 {
-    use DatabaseTransactions, WithoutMiddleware;
+    use DatabaseTransactions;
 
     public function test_pode_listar_autores()
     {

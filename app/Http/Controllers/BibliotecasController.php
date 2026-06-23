@@ -31,7 +31,13 @@ class BibliotecasController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $validator = \Illuminate\Support\Facades\Validator::make($request->all(), [
+            'nome' => 'required|string|max:255'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('bibliotecas.create', ['error' => 'Erro ao criar a biblioteca: Verifique as informações enviadas']);
+        }
         $created_by = $request->input("created_by");
         $nome       = $request->input("nome");
         $endereco   = $request->input("endereco");
@@ -46,7 +52,7 @@ class BibliotecasController extends Controller
 
             $biblioteca->save();
         } catch (\Exception $e) {
-            return redirect()->route('bibliotecas.new', ['error' => 'Erro ao criar a biblioteca: Verifique as informações enviadas']);
+            return redirect()->route('bibliotecas.create', ['error' => 'Erro ao criar a biblioteca: Verifique as informações enviadas']);
         }
         return redirect()->route('bibliotecas.index')->with('message', 'Biblioteca criada com sucesso');
 
@@ -101,7 +107,7 @@ class BibliotecasController extends Controller
 
             $biblioteca->save();
         } catch (\Exception $e) {
-            return redirect()->route('bibliotecas.new', ['error' => 'Erro ao atualizar a biblioteca: Verifique as informações enviadas']);
+            return redirect()->route('bibliotecas.create', ['error' => 'Erro ao atualizar a biblioteca: Verifique as informações enviadas']);
         }
 
         return redirect()->route('bibliotecas.index')->with('message', 'Biblioteca atualizada com sucesso');

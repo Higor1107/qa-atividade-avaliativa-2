@@ -9,7 +9,7 @@ use App\Models\User;
 
 class UserTest extends TestCase
 {
-    use DatabaseTransactions, WithoutMiddleware;
+    use DatabaseTransactions;
 
     public function test_pode_listar_usuarios()
     {

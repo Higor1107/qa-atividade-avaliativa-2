@@ -21,6 +21,13 @@ class PessoaController extends Controller
     }
 
     public function store(Request $request){
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:pessoas,email',
+            'telefone' => 'required|string|max:20',
+            'matricula' => 'required|string|max:50',
+            'password' => 'required|string'
+        ]);
 
         $pessoa = new Pessoa();
         $pessoa->name = $request->input('name');
@@ -47,6 +54,12 @@ class PessoaController extends Controller
     }
 
     public function update(Request $request, $id) {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:pessoas,email,'.$id,
+            'telefone' => 'required|string|max:20',
+            'matricula' => 'required|string|max:50',
+        ]);
 
         $pessoa = Pessoa::find($id);
         if (!$pessoa) {
@@ -78,8 +91,12 @@ class PessoaController extends Controller
     }
 
     public function destroy($id) {
-
-    }   
+        $pessoa = Pessoa::find($id);
+        if ($pessoa) {
+            $pessoa->delete();
+        }
+        return redirect()->route('pessoas.index')->with('message', 'Pessoa excluída com sucesso!');
+    }
 
 
 }

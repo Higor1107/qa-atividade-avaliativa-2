@@ -30,6 +30,15 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
+        $validator = \Illuminate\Support\Facades\Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:users,email',
+            'password' => 'required|string'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('users.create')->with('error', 'Erro ao criar o usuário: Verifique as informações enviadas');
+        }
         $name = $request->input('name');
         $email = $request->input('email');
         $password = bcrypt($request->input('password'));
@@ -58,6 +67,10 @@ class UserController extends Controller
 
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:users,email,'.$id,
+        ]);
         $user = User::find($id);
         if (!$user) {
             return redirect()->route('users.index')->with('error', 'Usuário não encontrado');

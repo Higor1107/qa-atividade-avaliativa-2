@@ -30,6 +30,12 @@ class LivroController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'autor_id' => 'required|exists:autores,id',
+            'titulo' => 'required|string|max:255',
+            'isbn' => 'required|string|max:20',
+            'data_publicacao' => 'required|date'
+        ]);
 
         $livro = new Livro();
         $livro->autor_id = $request->input('autor_id');
@@ -37,7 +43,7 @@ class LivroController extends Controller
         $livro->isbn = $request->input('isbn');
         $livro->data_publicacao = $request->input('data_publicacao');
         $livro->save();
-        return redirect()->route('livros.index');
+        return redirect()->route('livros.index')->with('message', 'Livro criado com sucesso');
     }
 
     public function edit(Request $request, $id)
@@ -49,13 +55,20 @@ class LivroController extends Controller
 
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'autor_id' => 'required|exists:autores,id',
+            'titulo' => 'required|string|max:255',
+            'isbn' => 'required|string|max:20',
+            'data_publicacao' => 'required|date'
+        ]);
+
         $livro = Livro::findOrFail($id);
         $livro->autor_id = $request->input('autor_id');
         $livro->titulo = $request->input('titulo');
         $livro->isbn = $request->input('isbn');
         $livro->data_publicacao = $request->input('data_publicacao');
         $livro->save();
-        return redirect()->route('livros.index');
+        return redirect()->route('livros.index')->with('message', 'Livro atualizado com sucesso');
     }
 
     public function destroy($id)

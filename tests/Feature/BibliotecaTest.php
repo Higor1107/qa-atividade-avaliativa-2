@@ -10,7 +10,7 @@ use App\Models\User;
 
 class BibliotecaTest extends TestCase
 {
-    use DatabaseTransactions, WithoutMiddleware;
+    use DatabaseTransactions;
 
     public function test_pode_listar_bibliotecas()
     {
