@@ -45,9 +45,10 @@ Segundo os requisitos de QA, identificamos os seguintes bugs intencionais nas co
 <img width="634" height="333" alt="image" src="https://github.com/user-attachments/assets/7c69b24d-b8e0-4d08-9fb1-54339d45be3f" />
 
 <img width="1546" height="733" alt="image" src="https://github.com/user-attachments/assets/da2a14ac-7759-425f-9e26-4238daa40901" />
-<img width="981" height="288" alt="image" src="https://github.com/user-attachments/assets/b199347b-c0b7-415c-9ef6-bb3bf6c0db3d" />
 
 <img width="1540" height="770" alt="image" src="https://github.com/user-attachments/assets/83b97f62-fd00-4a68-8f6a-b932617eaa17" />
 
 <img width="532" height="339" alt="image" src="https://github.com/user-attachments/assets/7ee5a278-e44d-4713-90f8-6056b771d039" />
+
+<img width="761" height="332" alt="Captura de tela 2026-06-24 175507" src="https://github.com/user-attachments/assets/3cc0b59c-4a05-4ecd-a685-b54aef28717e" />
 
