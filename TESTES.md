@@ -61,3 +61,6 @@ Este foi o verdadeiro trabalho do Analista de QA. Os testes revelaram falhas gra
 <img width="571" height="739" alt="image" src="https://github.com/user-attachments/assets/063322b9-2259-41e8-a016-c65d020c7e54" />
 
 <img width="567" height="438" alt="image" src="https://github.com/user-attachments/assets/171c1eed-42cd-44ac-991c-c1d7dfc0a5b8" />
+
+<img width="1098" height="637" alt="Captura de tela 2026-06-24 161005" src="https://github.com/user-attachments/assets/94b413b6-2596-4574-8de2-35292d024dd6" />
+
